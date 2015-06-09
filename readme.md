@@ -1,7 +1,7 @@
 
-UAC Bypass Tool
+# UAC Bypass Tool
  
-What's different? 
+### What's different? 
  
 	This tool doesn't use dll injection and can be used from the command-line or another application.
 
@@ -9,7 +9,7 @@ What's different?
 
 	Note: Use quoted strings for the file names when using the tool from the command-line.
 	
-Command-line Usage:
+### Command-line Usage:
 
 	rundll32.exe uaccpy32.dll,Copy "source" "target" [/AllowWarning]
 	rundll32.exe uaccpy32.dll,Move "source" "target" [/AllowWarning]
@@ -19,11 +19,9 @@ Command-line Usage:
 	rundll32.exe uaccpy64.dll,Move "source" "target" [/AllowWarning]
 	rundll32.exe uaccpy64.dll,Delete "target" [/AllowWarning]
 	
-Command-line Usage using the batch wrapper:
-
-   uacbp.bat Copy "source" "target" [/AllowWarning]
-   uacbp.bat Move "source" "target" [/AllowWarning]
-   uacbp.bat Delete "target" [/AllowWarning]
+	uacbp.bat Copy "source" "target" [/AllowWarning]
+	uacbp.bat Move "source" "target" [/AllowWarning]
+	uacbp.bat Delete "target" [/AllowWarning]
 
    
 API Usage, not the purpose of this dll, the functions are just available. 
