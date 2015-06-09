@@ -1,0 +1,7 @@
+EXPORTS
+	CopyW
+	DeleteW
+	MoveW
+	NeedsUserConsent
+	UacOperationA
+	UacOperationW
