@@ -1,9 +1,15 @@
 
 # UAC Bypass Consent Tool to Copy Files
+
+### Note.
+
+This tool is for research purposes only. It allows the automation of file operations 
+on a very easy way, but isn't suited for exploitation itself. 
  
 ### What's different? 
  
 This tool doesn't use dll injection and can be used from the command-line. On Success the program exits with exit-code zero, non-zero when failed. Note: Use quoted strings for the file names when using the tool from the command-line.
+
 	
 ### Command-line Usage:
 
