@@ -143,25 +143,26 @@ BOOL UACCPYAPI UacOperationA(LPSTR lpszSource, LPSTR lpszFolder, LPSTR lpszTarge
 	BOOL bResult = FALSE;
 	switch(uOperation)
 	{
+<<<<<<< HEAD
+=======
+		case UACOP_DELETE:
+			lpwszSource = AStringToWString(lpszSource);
+			if(!lpwszSource) goto hell;
+>>>>>>> origin/master
 		case UACOP_COPY:
 		case UACOP_MOVE:
 			lpwszFolder = AStringToWString(lpszFolder);
+			if(!lpwszFolder) goto hell;
 			lpwszTarget = AStringToWString(lpszTarget);
+<<<<<<< HEAD
 		case UACOP_DELETE:
 			lpwszSource = AStringToWString(lpszSource);
+=======
+			if(!lpwszTarget) goto hell;
+>>>>>>> origin/master
 			break;
 		default: 
 			return FALSE;
-	}
-	switch(uOperation)
-	{
-		case UACOP_DELETE:
-			if(!lpwszSource) goto hell;
-		case UACOP_COPY:
-		case UACOP_MOVE:
-			if(lpwszFolder) goto hell;
-			if(lpwszTarget) goto hell;
-			break;
 	}
 	bResult = UacOperationW(lpwszSource, lpwszFolder, lpwszTarget, uOperation);
 hell:
