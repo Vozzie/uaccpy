@@ -143,12 +143,12 @@ BOOL UACCPYAPI UacOperationA(LPSTR lpszSource, LPSTR lpszFolder, LPSTR lpszTarge
 	BOOL bResult = FALSE;
 	switch(uOperation)
 	{
-		case UACOP_DELETE:
-			lpwszSource = AStringToWString(lpszSource);
 		case UACOP_COPY:
 		case UACOP_MOVE:
 			lpwszFolder = AStringToWString(lpszFolder);
 			lpwszTarget = AStringToWString(lpszTarget);
+		case UACOP_DELETE:
+			lpwszSource = AStringToWString(lpszSource);
 			break;
 		default: 
 			return FALSE;
